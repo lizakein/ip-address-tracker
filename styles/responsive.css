@@ -1,0 +1,32 @@
+@media (min-width: 64rem) {
+  .main__search {
+    grid-template-columns: 8fr 1fr;
+    margin-block-end: 0.6rem;
+  }
+
+  .main__input {
+    letter-spacing: 0.3px;
+  }
+
+  .results {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    align-items: start;
+
+    max-height: 10rem;
+  }
+
+  .results__container {
+    align-items: start;
+    border-inline-end: 1px solid var(--secondary-color);
+  }
+
+  .results__container:last-child {
+    border: none;
+  }
+
+  .results__info {
+    letter-spacing: 0.2px;
+  }
+}
